@@ -1,10 +1,4 @@
-# Upi Payment
-
-
-![API](https://img.shields.io/badge/API-16%2B-34bf49.svg)
-[ ![Download](https://api.bintray.com/packages/wangsun6/android-upi-payment/com.wangsun.upi.payment/images/download.svg?version=latest) ](https://bintray.com/wangsun6/android-upi-payment/com.wangsun.upi.payment/latest/link)
-
-
+# Android Upi Payment Integration Guide
 
 ### Demo:
 ![](/demo.gif)
@@ -16,7 +10,7 @@ A UpiPayment library for integrating upi payments using existing upi supported a
 
 
 ## Setup
-Step 1: Add the dependency
+Step 1: Download & setup the UPI Activity codes
 
 ## Usage
 Step 1: Declare and Initialize UpiPayment.
@@ -26,8 +20,8 @@ Step 1: Declare and Initialize UpiPayment.
 
 // note: always create new instance of PaymentDetail for every new payment/order
 var payment = PaymentDetail(
-    "wangsunhakhun@oksbi",  //vpa/upi = your vpa/upi
-    "Wangsun Hakhun",       //name = your name
+    "yourVPA@oksbi",        //vpa/upi = your vpa/upi
+    "Your Name",            //name = your name
     "",                     //payeeMerchantCode = only if you have merchantCode else pass empty string
     "",                     //txnRefId =  if you pass empty string we will generate txnRefId for you
     "description",          //description =
@@ -60,8 +54,8 @@ new UpiPayment(this)
 
 // note: always create new instance of PaymentDetail for every new payment/order
 var payment = PaymentDetail(
-    vpa="wangsunhakhun@oksbi",
-    name = "Wangsun Hakhun",
+    vpa="yourVPA@oksbi",
+    name = "Your Name",
     payeeMerchantCode = "",       // only if you have merchantCode else pass empty string
     txnRefId = "",                // if you pass empty string we will generate txnRefId for you
     description = "description",
@@ -157,20 +151,4 @@ ArrayList<String> existingUpiAppNames = UpiPayment.getExistingUpiApps(context);
 ```
 
 ---
-
-
-### Quick Links
-
-*  [ChangeLog](/CHANGELOG.md)
-
----
-
-### To pick media files(audio,image,video) you can use [Turtlebody Media Picker](https://github.com/Turtlebody/android-media-picker) library.
-
-
-### To pick doc files(txt,doc,docx,pdf etc) you can use [Turtlebody Doc Picker](https://github.com/Turtlebody/android-doc-picker) library.
-
-
-
-
 
